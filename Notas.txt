@@ -1,5 +1,17 @@
 Septiembre 12 Clase 1
 --------------------------------------------------
-Pagina del curso: https://nabetsecr.github.io/Programacion_Basica/
+Pagina del curso: https://nabetsecr.github.io/Principios_de_Redes_y_Comunicacion/
 
+Semana 6 entrega primer entregable proyecto 
+Semana 7 caso de estudio practico
+Semana 11 proyecto final como tal
+Semana 13,14 exposicion de proyecto
+
+caso estudio 15%
+pruebas 10%
+proyecto 50%
+actividad evaluativa practico 15%
+exposicion 10%
+
+Pruebas netacad => 3 meses para hacer todos los examenes 
 --------------------------------------------------
