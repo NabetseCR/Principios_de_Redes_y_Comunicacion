@@ -15,3 +15,62 @@ exposicion 10%
 
 Pruebas netacad => 3 meses para hacer todos los examenes 
 --------------------------------------------------
+
+Septiembre 19 Clase 2
+
+Subredes direcciones IP
+
+Cantidad de Subredes
+
+Direccion IP: 
+
+Clase                           Rango de IPS                                    Mascara             Se utiliza para                Cantidad de direcciones
+
+A                               0.0.0.0 - 127.255.255.255                       255.0.0.0                  Pruebas
+
+B                               128.0.0.0 - 191.255.255.255                       255.255.0.0                                               
+
+C                               192.0.0.0 - 223.255.255.255                       255.255.255.0                                             256
+
+D                               224.0.0.0 - 239.255.255.255                       N/A
+
+E                               240.0.0.0 - 255.255.255.255                       N/A
+
+
+192.168.10.0 clase C
+172.10.0.0 clase B
+10.10.10.0 clase A
+
+para saber cuantos hosts disponibles, tomo cantidad 0s ejemplo 11 -> 2^11 => 2048
+
+2^7 = 128
+2^6 = 64
+2^5 = 32
+2^4 = 16
+2^3 = 8
+2^2 = 4
+2^1 = 2
+2^0 = 1
+
+la suma de estos valores da 255
+
+196.100.1.0/24
+2^n-2 = hosts
+2^n = Subredes
+cuantos host quiere el cliente = 36, importante siempre sumar a ese valor
+=> 2^n-2 = 36 + 2 => que numero se es mayor mas cercano a 38 => 2^6 = 64 le restamos 1 64-1 = 63 => esto seria el salto o cantidad de direcciones
+
+cuento la cantidad de 0 igual al numero que use para elevar en este caso el 6, lo ceros que sobren se vuelven 1s
+
+11111111.11111111.11111111.00000000
+11111111.11111111.11111111.11000000
+
+tenemos del cambio 2 nuevos 1s, con esto se saca la cantidad de Subredes
+
+2^2 = 4 Subredes
+
+red             1era utilizable                ultima utilizable          broadcast      mascara
+196.100.1.0       196.100.1.1                         196.100.1.62           196.100.63      /26
+196.100.1.64       196.100.1.64                         196.100.1.126           196.100.1.127      /26
+196.100.1.128       196.100.1.128                         196.100.190           196.100.1.191      /26
+196.100.1.192       196.100.1.193                         196.100.1.254           196.100.1.255      /26
